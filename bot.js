@@ -74,7 +74,7 @@ if (message.content.startsWith(prefix + 'help')) { /// This is The DMS Code Send
 『${prefix}invinfo <invitelink here> / لمعلومات عن الدعوه』
 『 مثال : invinfo m82n8P
 『${prefix}invite-codes/يعرض لك روابط الانفايتات حكك في السيرفر 』
-『${prefix}cal/اله حاسبة』 
+
 『${prefix}trans <language> <any thing>/يترجم لك الي تبيه من اي لغة』
 『${prefix}short/يختصر لك رابط كبير الى رابط صغير』
 『${prefix}tag/يكتب لك الكلمة بشكل جميل وكبير』
@@ -3217,7 +3217,7 @@ member.addRole(KinG66S[member.user.id].roles.shift());
 });
  client.on('message', message => {
     if(message.content.startsWith (prefix  + 'user')) {
-     moment.locale('ar-ly');
+     moment.lo0e('ar-ly');
 var args = message.content.split(" ").slice(1); 
 let user = message.mentions.users.first();
 var men = message.mentions.users.first();
