@@ -399,27 +399,7 @@ return;
 }
 
 });
-client.on('message', msg => {
- if (ms.content.startsWith(prefix + 'cal')) {
-    let args = ms.content.split(" ").slice(1);
-        const question = args.join(' ');
-    if (args.length < 1) {
-        ms.reply('Specify a equation, please.');
-} else {    let answer;
-    try {
-        answer = math.eval(question);
-    } catch (err) {
-        ms.reply(`Error: ${err}`);
-    }
-    
-    const embed = new Discord.RichEmbed()
-    .addField("**Input**: ",`**${question}**`, true)
-    .addField("**Output**: ",`**${answer}**`, true)
-    ms.channel.send(embed)  .catch(console.error);
 
-    }
-};
-});
 client.on('message', message => {
     if (message.content.startsWith("-trans")) {
       
