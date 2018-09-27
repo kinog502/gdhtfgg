@@ -331,24 +331,7 @@ message.channel.send(embed)
 
 
 });
-client.on('message', function(msg) {
-    if(ms.content.startsWith (prefix  + 'server')) {
-      let embed = new Discord.RichEmbed()
-      .setColor('RANDOM')
-      .setThumbnail(ms.guild.iconURL)
-      .setTitle(`**Showing Details Of** ${ms.guild.name}`)
-      .addField('`Server Region`',`[${ms.guild.region}]`,true)
-      .addField('`Roles Count`',`[${ms.guild.roles.size}]`,true)
-      .addField('`Members Count`',`[${ms.guild.memberCount}]`,true)
-      .addField('`Online Members`',`[${ms.guild.members.filter(m=>m.presence.status == 'online').size}]`,true)
-      .addField('`Text Channels`',`[${ms.guild.channels.filter(m => m.type === 'text').size}]`,true)
-      .addField('`Voice Channels`',`[${ms.guild.channels.filter(m => m.type === 'voice').size}]`,true)
-      .addField('`Server Owner`',`**${ms.guild.owner}**`,true)
-      .addField('`Server Id`',`**${ms.guild.id}**`,true)
-      .addField('`Server was created in`',ms.guild.createdAt.toLocaleString())
-      ms.channel.send({embed:embed})
-    }
-});
+
  client.on('message', message => {
     if (message.content.startsWith(prefix + "bot")) {
     message.channel.send({
