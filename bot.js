@@ -886,7 +886,7 @@ ms.delete();
 })
 reaction2.on("collect", r => {
 message.channel.send(`**Broadcast Canceled.**`).then(m => m.delete(5000));
-ms-delete();
+ms.delete();
 })
 })
 }
