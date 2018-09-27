@@ -924,7 +924,7 @@ Discord.RichEmbed()
 .setFooter(`Sender : ${message.author.username}`)
 .setThumbnail(message.author.avatarURL)
 m.send({ embed: bc })
-ms-delete();
+ms.delete();
 })
 })
 NormalBc.on("collect", r => {
