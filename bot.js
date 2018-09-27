@@ -2633,17 +2633,7 @@ client.on('messageUpdate', (oldRebel, newRebel) => {
            newRebel.author.send("ممنوع روآبط الدسكورد. \n إذآ كنت تريد النشر توآصل من الإدآرة.");
     }
 });
-const invites = {};
-const wait = require('util').promisify(setTimeout);
-client.on('ready', () => {
-  wait(1000);
 
-  client.guilds.forEach(g => {
-    -fetchInvites().then(guildInvites => {
-      invites[-id] = guildInvites;
-    });
-  });
-});
 
 let sWlc = JSON.parse(fs.readFileSync("./setWlc.json", "UTF8"))   
 client.on('message', message => {
