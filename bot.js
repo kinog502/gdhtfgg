@@ -2619,12 +2619,6 @@ client.on('messageUpdate', (oldRebel, newRebel) => {
 
 
   
-    setInterval(() => {
-      c.setName(`Voice Online : [ ${message.guild.members.filter(m => m.voiceChannel).size} ]`)
-    },1000);
-  });
-  }
-});
 client.on('message', async msg => { // eslint-disable-line
 	if (ms.author.bot) return undefined;
 	//by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
