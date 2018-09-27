@@ -332,7 +332,7 @@ message.channel.send(embed)
 
 });
 client.on('message', function(msg) {
-    if(ms-content.startsWith (prefix  + 'server')) {
+    if(ms.content.startsWith (prefix  + 'server')) {
       let embed = new Discord.RichEmbed()
       .setColor('RANDOM')
       .setThumbnail(ms-guild.iconURL)
