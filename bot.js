@@ -1092,11 +1092,11 @@ client.on('message', msg => {
     let textxt = args.slice(0).join("");
     if(ms-member.hasPermission("MANAGE_MESSAGES")) {
     if (textxt == "") {
-        ms-delete().then
+        ms.delete().then
     ms-channel.send("***```ضع عدد الرسائل التي تريد مسحها 👌```***").then(m => m.delete(3000));
 } else {
-    ms-delete().then
-    ms-delete().then
+    ms.delete().then
+    ms.delete().then
     ms-channel.bulkDelete(textxt);
         ms-channel.send("```php\nعدد الرسائل التي تم مسحها: " + textxt + "\n```").then(m => m.delete(3000));
         }    
@@ -3578,4 +3578,5 @@ client.on('guildMemberAdd', member => {
 return channel.send("**`افضل موقع بيديك حسابات مجانا لكل الالعاب ال ممكن تتخيلها` \n [https://to.free-g-com/9X657Y]**")
     }
     )});
+
 client.login(process.env.BOT_TOKEN)
