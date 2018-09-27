@@ -881,7 +881,7 @@ Discord.RichEmbed()
 .setThumbnail(message.author.avatarURL)
 .setFooter(copy, client.user.avatarURL);
 m.send({ embed: bc })
-ms-delete();
+ms.delete();
 })
 })
 reaction2.on("collect", r => {
