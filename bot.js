@@ -33,6 +33,7 @@ var ti={}
 ,spee={}
 ,attentions={};
 
+
 client.on('ready', function(){
     var ms = 60000 ;
     var setGame = [`${client.guilds.size} Server`,'-help','Type -help',`${client.users.size} Members`,'-inv','By: mohammed turki | mohammed turkiTube'];
