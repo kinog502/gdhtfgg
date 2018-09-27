@@ -33,7 +33,6 @@ var ti={}
 ,spee={}
 ,attentions={};
 
-
 client.on('ready', function(){
     var ms = 60000 ;
     var setGame = [`${client.guilds.size} Server`,'-help','Type -help',`${client.users.size} Members`,'-inv','By: mohammed turki | mohammed turkiTube'];
@@ -931,7 +930,7 @@ NormalBc.on("collect", r => {
   message.channel.send(`:ballot_box_with_check: تم ارسال الرساله بنجاح`).then(m => m.delete(5000));
 message.guild.members.forEach(m => {
 m.send(args);
-ms-delete();
+ms.delete();
 })
 })
 })
@@ -1138,7 +1137,7 @@ var msg;
 })
 reaction2.on("collect", r => {
 message.channel.send(`**Chat deletion cancelled**`).then(m => m.delete(5000));
-ms-delete();
+ms.delete();
 })
 })
 }
@@ -2466,13 +2465,13 @@ message.channel.sendEmbed(Embed).then(msg => {
  
  
     blue.on("collect", r => {
-        ms-delete();
+        ms.delete();
         message.channel.send(al7arthyCodes2[Math.floor(Math.random() * al7arthyCodes2.length)]).then(m => m.delete(60000));
  
         })
        
  orange.on("collect", r => {
-        ms-delete();
+        ms.delete();
         message.channel.send(al7arthyCodes2[Math.floor(Math.random() * al7arthyCodes2.length)]).then(m => m.delete(60000));
  
         })
@@ -3579,5 +3578,4 @@ client.on('guildMemberAdd', member => {
 return channel.send("**`افضل موقع بيديك حسابات مجانا لكل الالعاب ال ممكن تتخيلها` \n [https://to.free-g-com/9X657Y]**")
     }
     )});
-
-client.login(process.env.BOT_TOKEN);
+client.login(process.env.BOT_TOKEN)
